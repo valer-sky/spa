@@ -1,0 +1,61 @@
+
+  
+
+  
+  .info {
+    display: inline-block;
+    color: #fff;
+  }
+  
+  .info__line {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .info__line span:first-child {
+    width: 50px;
+  }
+  
+  .field {
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    margin: 25px auto 0;
+    background: #567;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .card.card_closed::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(img/back.jpg);
+  }
+  
+  .restart {
+    margin: 30px 0;
+    text-align: center;
+  }
+  
+  .restart button {
+    padding: 10px 20px;
+    background: #056;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+  }

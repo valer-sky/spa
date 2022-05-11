@@ -1,0 +1,88 @@
+:root
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    margin: 0;
+    background: url(/img/background.jpg);
+    /* color: #c8c8c8; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.6rem;
+}
+
+nav
+{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    top: 50px;
+    inset: 0 0 auto 0;
+    height: 4.8rem;
+    /* background: url(/img/background.jpg); */
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.logo
+{
+    position: absolute;
+    left: 0;
+    padding: 0.8rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.menu
+{
+    padding: 0;
+    margin: 1rem 0;
+    position: absolute;
+    right: 0;
+    list-style: none;
+}
+
+.menu__item
+{
+    display: inline-block;
+    padding: 0 0.8rem;
+    transition: 250ms ease;
+}
+
+.menu__item:hover
+{
+    color: rgb(192, 209, 61);
+}
+
+.menu__item > a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+main
+{
+    position: relative;
+    margin-top: 4.8rem;
+}
+
+#container
+{
+    /* width: clamp(288px, 80%, 800px); */
+    width: 100%;
+    margin: auto;
+    /* background: url(/img/background.jpg); */
+    /* color: rgb(231, 150, 10); */
+    height: calc(100vh - 7.2rem);
+    box-sizing: border-box;
+    padding: 0.8rem 1.6rem;
+}
+
+
+
+h1
+{
+    font-weight: bold;
+    font-size: 2.4rem;
+}
