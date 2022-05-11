@@ -1,8 +1,10 @@
 // "use strict";
 let gameField      = document.getElementById('field');
+console.log(gameField);
 let restartButton  = document.getElementById('restart');
 let stepsCounter   = document.getElementById('steps');
 let timerUI        = document.getElementById('timer');
+console.log(timerUI);
 let cardViewInHTML = '<div class="card card_closed" data-status="closed"></div>';
 let cardsContent  = [1,2,3,4,5,6,7,8,9,10,11,12];
     cardsContent = cardsContent.map((card) => {
@@ -14,8 +16,10 @@ let cardsContent  = [1,2,3,4,5,6,7,8,9,10,11,12];
 let openedCards    = [];
 let complitedCards = 0;
 let paused         = false;
-
+console.log(restartButton);
 restartButton.hidden = true;
+console.log(restartButton);
+
 cardsContent = doubleCards(cardsContent);
 createCardsOnGameField(field);
 
