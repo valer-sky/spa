@@ -96,7 +96,7 @@ function mixarr(arr) {
 }
 
 function doubleCards(cardsContent) {
-	cardsContent.push(...cardsContent);
+	cardsContent = [...cardsContent,...cardsContent];
 	cardsContent = mixarr(cardsContent);
   return cardsContent;
 }
