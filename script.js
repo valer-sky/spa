@@ -1,5 +1,4 @@
-window.onload = function()
-{
+window.onload = function() {
     const path = window.location.pathname.split("/");
 
     switch(path[1])
@@ -60,4 +59,7 @@ window.onload = function()
             }
         }
     }
+
+    
 }
+

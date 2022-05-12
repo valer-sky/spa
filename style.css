@@ -23,6 +23,7 @@ nav
     /* background: url(/img/background.jpg); */
     color: rgb(255, 255, 255);
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .logo

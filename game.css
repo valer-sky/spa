@@ -37,6 +37,20 @@
     cursor: pointer;
     user-select: none;
   }
+  .card .card-image {
+    width: 90px;
+    height: 90px;
+    position: relative; 
+    display: flex; 
+    flex-direction: row; 
+      flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+      user-select: none; 
+    margin: 3px; 
+    padding: 2px;
+  }
   
   .card.card_closed::after {
     content: '';
@@ -59,3 +73,109 @@
     color: #fff;
     cursor: pointer;
   }
+
+/* Player Form */
+
+.game_player {
+  margin-top: 0;
+  margin-bottom: 3vh;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.game_player input {
+  width: auto;
+  margin: 0;
+  padding: 5px 10px;
+
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: block;
+
+  font: inherit;
+  font-size: calc(1em + 1vh);
+  line-height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.game_player input::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+.game_player input:focus {
+  outline: none;
+  border-color: white;
+}
+
+.error_span {
+  color: white;
+  position: absolute;
+  top: 6vh;
+
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/* Player Info */
+
+.player_info_name,
+.player_info_score {
+    box-sizing: border-box;
+    font: inherit;
+    font-size: calc(1.2em);
+    padding: 1vh;
+    text-align: left;
+
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+/* Player */
+
+.memo_records {
+  margin-top: 3vh;
+  margin-left: 35%;
+  width: 30%;
+  font-size: calc(1em + 1vw);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  border: 10px solid;
+ 
+}
+
+.records_table {
+  background-color: #f1f1f1;
+  opacity: 20%;
+}
+
+.records_table td {
+  word-wrap: break-word;
+  padding: 3vh;
+  text-align: left;
+  color: rgb(203, 39, 39);
+}
+
+.records_table td:nth-child(2) {
+  text-align: right;
+  color: rgb(39, 203, 58);
+}
+
+.records_table tr:first-child {
+
+}
+
