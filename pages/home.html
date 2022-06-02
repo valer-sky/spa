@@ -1,28 +1,22 @@
-<!-- <div class="player_name hidden">
-  <form class="game_player" name="formPlayer">
-      <input type="text" name="player" maxlength="30" placeholder="Your name...">
-      <span class="error_span"></span>
-  </form>
-</div> -->
-<div class="main_menu hidden">
-  <div class="menu player_info">
-      <div class="player_info_name"></div>
-      <div class="player_info_score"></div>
+
+<div class="wrapper">
+  <div class="game__container">
+      <div class="info">
+          <div class="info__time">
+              <p>Time:</p>
+              <p id="timer" data-started>00:00:00</p>
+          </div>
+          <div class="info__steps">
+              <p>Steps:</p>
+              <p id="steps">0</p>
+          </div>
+      </div>
+      <div class="field" id="field"></div>
+      <div class="restart">
+          <button id="restart">Restart</button>
+      </div>
   </div>
 </div>
-<div class="info">
-    <div class="info__line">
-      <span>Time:</span>
-      <span id="timer" data-started>00:00:00</span>
-    </div>
-    <div class="info__line">
-      <span>Steps:</span>
-      <span id="steps">0</span>
-    </div>
-  </div>
-  <div class="field" id="field"></div>
-  <div class="restart">
-    <button id="restart">Restart</button>
-  </div>
 
- 
+<script src="../game.js"></script>
+
