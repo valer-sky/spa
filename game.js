@@ -1,10 +1,7 @@
 "use strict";
 
 export function gameInit() {
-  // let form = document.forms['formPlayer'];
-  // let errorSpan = document.querySelector('.error_span');
   let gameField = document.getElementById('field');
-  
   let restartButton = document.getElementById('restart');
   let stepsCounter = document.getElementById('steps');
   let timerUI = document.getElementById('timer');
@@ -23,7 +20,6 @@ export function gameInit() {
   
   restartButton.hidden = true;
   
-
   cardsContent = doubleCards(cardsContent);
   createCardsOnGameField(field);
 
@@ -44,7 +40,6 @@ export function gameInit() {
     stepsCounter.innerHTML = +stepsCounter.innerHTML + 1;
 
     if (openedCards.length !== 2) return;
-
     // set comlited status for matched cards, or close their with delay if not
     if (openedCards[0] === openedCards[1]) {
       setOpenedCardsStatus('complited', '');
@@ -56,12 +51,9 @@ export function gameInit() {
         paused = false;
       }, 700);
     }
-
-    // clear openedCards array for next try
+// clear openedCards array for next try
     openedCards = [];
-    let resultDisplay = document.querySelector('.result');
-
-
+    
     if (complitedCards === cardsContent.length) {
       // resultDisplay.textContent = `Congratulations! You found them all! Your time: ${ timerUI.innerHTML } and your steps: ${ stepsCounter.innerHTML }`;
       restartButton.hidden = false;
@@ -80,7 +72,6 @@ export function gameInit() {
     stepsCounter.innerHTML = 0;
     complitedCards = 0;
     restartButton.hidden = true;
-    resultDisplay.textContent = 'hidden';
   }
 
   function openCard(target) {
@@ -104,8 +95,8 @@ export function gameInit() {
   }
 
   function doubleCards(cardsContent) {
-    // cardsContent = [...cardsContent,...cardsContent];
-    cardsContent.push(...cardsContent);
+    cardsContent = [...cardsContent,...cardsContent];
+    // cardsContent.push(...cardsContent);
     cardsContent = mixarr(cardsContent);
     return cardsContent;
   }
@@ -160,36 +151,4 @@ export function gameInit() {
       timerUI.dataset.started = '';
     }
   }
-
-
-// let form = document.forms['formPlayer'];
-// let errorSpan = document.querySelector('.error_span');
-
-// form.addEventListener('change', () => {
-//     errorSpan.textContent = '';
-//     let inputName = document.querySelector('input[name]').value;
-//     let re = /^[a-zA-Zа-яА-ЯёЁ]{5,16}$/;
-//     let same;
-
-//     for (let i = 0; i < recordsArray.length; i++) {
-//         if (recordsArray[i][0] === inputName) {
-//             errorSpan.textContent = 'player exist';
-//             same = true;
-//         }
-//     }
-//     if (!re.test(inputName)) {
-//       errorSpan.textContent = 'name must be 5-16 letters';
-
-//   } else if (re.test(inputName) && !same) {
-//       localStorage.setItem('name', inputName);
-//       localStorage.setItem('projready', '1');
-//       localStorage.setItem('sound', 'on');
-//       localStorage.setItem('level', '1');
-//       records.setPlayer();
-//       setTimeout(() => {
-//           this.switchToStateFromURLHash();
-//       }, 500);
-//   }
-// });
 }
-
