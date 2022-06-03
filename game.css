@@ -41,6 +41,7 @@ p {
   padding: 3px;
   margin: 10px;
   color: rgb(255, 255, 255);
+  font-size:calc(12px + 7 * ((100vw - 320px)/ (1280 - 320)));
 }
 
 .field {
@@ -94,21 +95,26 @@ p {
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  margin-top: 450px;
+  margin-top: 430px;
 }
 
-@media (max-width: 615px) {
+@media (max-width: 715px) {
   .game__container {
-      margin-top: 5px;
+      margin-top: 95px;
   }
   .info {
       transform: translate(-120px, -20px);
   }
 
   .field {
-      width: 500px;
+      width: 550px;
       max-height: 100%;
       margin: auto;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+
   }
   .wrapper {
       height: 100%;
@@ -116,21 +122,21 @@ p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .game__container {
-      margin-top: -40px;
+      margin-top: 70px;
   }
   .field {
-      width: 400px;
+      width: 500px;
       max-height: 100%;
       margin: auto;
   }
   .card {
-      width: 90px;
-      height: 90px;
+      width: 70px;
+      height: 70px;
   }
   .info {
-      transform: translate(-150px, 20px);
+      transform: translate(-150px, 10px);
   }
   p {
       padding: 5px;
@@ -138,25 +144,79 @@ p {
   }
 }
 
-@media (max-width: 386px) {
+@media (max-width: 525px) {
   .game__container {
       margin-top: -45px;
   }
   .field {
-      width: 320px;
+      width: 90%;
       max-height: 100%;
       margin: auto;
   }
   .card {
-      width: 75px;
-      height: 75px;
+      width: 60px;
+      height: 60px;
   }
   .info {
       transform: translate(100px, 20px);
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: -40px;
+  }
+  .info__time {
+      margin-top: 20px;
+  }
+  .info__steps {
+      margin-top: -40px;
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .game__container {
+      margin-top: -45px;
+  }
+  .field {
+      width: 85%;
+      max-height: 100%;
+      margin: auto;
+  }
+  .card {
+      width: 60px;
+      height: 60px;
+  }
+  .info {
+      transform: translate(100px, 20px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .info__time {
+      margin-top: 20px;
+  }
+  .info__steps {
+      margin-top: -40px;
+      margin-bottom: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .game__container {
+      margin-top: -45px;
+  }
+  .field {
+      width: 90%;
+      max-height: 100%;
+      margin: auto;
+  }
+  .card {
+      width: 55px;
+      height: 55px;
+  }
+  .info {
+      transform: translate(50px, 30px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
   .info__time {
       margin-top: 20px;
@@ -180,7 +240,28 @@ p {
 }
 .records_table {
   background-color: #f1f1f1;
+  width: 100%;
   opacity: 70%;
+  display: flex;
+  justify-content: center;
+
+}
+@media (max-width: 600px) {
+  .memo_records {
+    width: 40%;
+  }
+}
+@media (max-width: 480px) {
+  .memo_records {
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+@media (max-width: 370px) {
+  .memo_records {
+    width: 60%;
+    margin-left: 20%;
+  }
 }
 
 .records_table td {
@@ -188,9 +269,11 @@ p {
   padding: 3vh;
   text-align: left;
   color: rgb(203, 39, 39);
+  font-size:calc(12px + 7 * ((100vw - 320px)/ (1280 - 320)));
 }
 
 .records_table td:nth-child(2) {
   text-align: right;
   color: rgb(39, 203, 58);
+  font-size:calc(12px + 7 * ((100vw - 320px)/ (1280 - 320)));
 }

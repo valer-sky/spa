@@ -38,7 +38,6 @@ nav {
   padding: 0;
   margin: 1rem 0;
   position: absolute;
-  /* right: -150px; */
   list-style: none;
   cursor: pointer;
 }
@@ -48,7 +47,7 @@ nav {
   transition: 250ms ease;
   width: auto;
   cursor: pointer;
-  font-size: 20px;
+  font-size:calc(16px + 7 * ((100vw - 320px)/ (1280 - 320)));
 }
 
 .menu__item:hover {
@@ -66,11 +65,8 @@ main {
 }
 
 #container {
-  /* width: clamp(288px, 80%, 800px); */
   width: 100%;
   margin: auto;
-  /* background: url(/img/background.jpg); */
-  /* color: rgb(231, 150, 10); */
   height: calc(100vh - 7.2rem);
   box-sizing: border-box;
   padding: 0.8rem 1.6rem;
@@ -79,7 +75,7 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 2.4rem;
+  font-size:calc(14px + 7 * ((100vw - 320px)/ (1280 - 320)));
   color: #fff;
   display: flex;
   justify-content: center;
@@ -91,9 +87,21 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 50%;
-  margin-left: 25%;
+  width: 100%;
+  
 }
 .rules p {
-  font-size: 20px;
+  font-size:calc(11px + 7 * ((100vw - 320px)/ (1280 - 320)));
+}
+
+@media (max-width: 525px) {
+  .logo {
+    display: none;
+  }
+}
+
+@media (max-width: 525px) {
+  .menu {
+    margin-left: 50%;
+  }
 }
