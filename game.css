@@ -90,12 +90,12 @@ p {
 .restart button {
   width: auto;
   padding: 10px 20px;
-  background: rgb(102, 0, 85);
+ background: rgb(102, 0, 85); 
   border: none;
   border-radius: 5px;
   color: #fff;
   cursor: pointer;
-  margin-top: 430px;
+
 }
 
 @media (max-width: 715px) {
