@@ -3,8 +3,8 @@
 }
 
 body {
-  /* background: url(/img/background.jpg); */
-  background: blue;
+  background: url(img/background.jpg);
+  /* background: blue; */
   font-family: 'Bangers', cursive;
   font-size: 1.6rem;
 }
