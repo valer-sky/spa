@@ -17,7 +17,7 @@ export function gameInit() {
   let complitedCards = 0;
   let paused         = false;
   
-  restartButton.hidden = false;
+  restartButton.hidden = true;
   cardsContent = doubleCards(cardsContent);
   createCardsOnGameField(field);
   
