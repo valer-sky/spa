@@ -5,7 +5,7 @@
 
 .wrapper {
   width: 100%;
-  height: 92vh;
+  height: 100vh;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -41,7 +41,7 @@ p {
   padding: 3px;
   margin: 10px;
   color: rgb(255, 255, 255);
-  font-size:calc(12px + 7 * ((100vw - 320px)/ (1280 - 320)));
+  font-size: calc(12px + 7 * ((100vw - 320px) / (1280 - 320)));
 }
 
 .field {
@@ -90,7 +90,7 @@ p {
 .restart button {
   width: auto;
   padding: 10px 20px;
- background: rgb(102, 0, 85); 
+  background: rgb(102, 0, 85); 
   border: none;
   border-radius: 5px;
   color: #fff;
